@@ -1,0 +1,160 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main-info {
+  margin: 75% 0 0 0;
+  position: relative;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 10px;
+}
+h3 {
+  margin: 0 0 15px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 50px 0 0;
+  color: #03EBC8;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+p {
+  font-weight: 400;
+  font-size: 15px;
+}
+.left {
+  display: inline-block;
+  background: url('IMGS/kitty.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 50%;
+  min-height: 490px;
+  text-align: center;
+  color: #fff;
+}
+.right {
+  display: inline-block;
+  padding: 0 20px 20px;
+}
+footer {
+  height: 25px;
+  margin-top: 15px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding-left: 3px;
+  display: inline-block;
+}
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 15px 10px 9px 10px;
+  display: inline-block;
+  height: 25px;
+  width: 160px;
+  margin: 10px 0;
+  background-color: #03EBC8;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+  background-color: #fff;
+  color: #03EBC8;
+}
+nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: block;
+  position: fixed;
+  background: #fff;
+  width: 50%;
+  height: 50px;
+  text-align: right;
+}
+nav ul {
+  margin: 10px 65px 0 0;
+}
+nav li {
+  display: inline-block;
+  padding: 7px;
+}
+li:hover {
+  color: #03EBC8;
+}
+.skills li span {
+  color:#969696;
+}
+.skills li {
+  font-weight: 300;
+  font-size: 13px;
+  color: #03EBC8;
+  padding: 5px 0;
+}
+.about-me {
+  margin-top: 150px;
+}
+.about-me p {
+  margin: 0 0 30px;
+}
+.work-experience {
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.work-description {
+  float: left;
+}
+.work-year {
+  float: right;
+}
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.work-description p {
+  margin:0;
+}
+.button-resume {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #03EBC8;
+  margin-top: 30px;
+  display: block;
+}
+.arrow {
+  height: 15px;
+}
+@media (min-width: 770px) {
+  .left {
+    float: left;
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+  }
+  .right {
+    float: right;
+    height: 100%;
+    width: 45%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 960px) {
+}
