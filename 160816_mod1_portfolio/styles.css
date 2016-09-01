@@ -4,9 +4,21 @@ body {
   margin: 0;
   padding: 0;
 }
+.left {
+  display: inline-block;
+  background: url('IMGS/headshot1.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+  /*min-height: 490px;*/
+  text-align: center;
+  color: #fff;
+}
 .main-info {
-  margin: 75% 0 0 0;
   position: relative;
+  top: 62%;
 }
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -19,6 +31,11 @@ h3 {
   font-weight: 300;
   padding: 0 5px;
 }
+.right {
+  display: inline-block;
+  padding: 0 20px 20px;
+  color: #444;
+}
 h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -30,23 +47,11 @@ h4 {
 p {
   font-weight: 400;
   font-size: 15px;
-}
-.left {
-  display: inline-block;
-  background: url('IMGS/kitty.jpg') no-repeat;
-  background-size: cover;
-  position: absolute;
-  background-position: center;
-  width: 50%;
-  min-height: 490px;
-  text-align: center;
-  color: #fff;
-}
-.right {
-  display: inline-block;
-  padding: 0 20px 20px;
+  margin: 0 0 20px;
+  line-height: 1.3em;
 }
 footer {
+  /*border: 2px solid blue;*/
   height: 25px;
   margin-top: 15px;
 }
@@ -55,6 +60,13 @@ footer {
   height: 20px;
   padding-left: 3px;
   display: inline-block;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+.social-icon:hover {
+  opacity: .5;
 }
 .button {
   font-family: 'Montserrat', sans-serif;
@@ -68,10 +80,14 @@ footer {
   color: #fff;
   text-decoration: none;
   box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
 }
 .button:hover {
-  background-color: #fff;
-  color: #03EBC8;
+  transform: scale(1.05);
+  /*background-color: #fff;
+  color: #03EBC8;*/
 }
 nav {
   font-family: 'Montserrat', sans-serif;
@@ -81,19 +97,32 @@ nav {
   display: block;
   position: fixed;
   background: #fff;
+  border-bottom: 1px solid #ebebeb;
+  margin-left: -23px;
   width: 50%;
   height: 50px;
   text-align: right;
 }
 nav ul {
-  margin: 10px 65px 0 0;
+  margin: 17px 50px 0 0;
 }
-nav li {
+li {
+  color: #444;
   display: inline-block;
-  padding: 7px;
+  padding-left: 20px;
+  transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
 }
 li:hover {
   color: #03EBC8;
+}
+ul.skills {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 5px;
+  margin-left: 20px;
+  line-height: 1.2em;
 }
 .skills li span {
   color:#969696;
@@ -104,11 +133,11 @@ li:hover {
   color: #03EBC8;
   padding: 5px 0;
 }
-.about-me {
+#about-me {
   margin-top: 150px;
 }
-.about-me p {
-  margin: 0 0 30px;
+#about-me p {
+  margin: 0 0 5px;
 }
 .work-experience {
   height: 50px;
@@ -126,20 +155,37 @@ h5 {
   font-weight: 700;
   margin: 0;
 }
-.work-description p {
-  margin:0;
-}
 .button-resume {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #03EBC8;
-  margin-top: 30px;
+  margin-top: 50px;
   display: block;
 }
 .arrow {
+  padding-left: 5px;
   height: 15px;
 }
+
+/*projects styling*/
+#projects {
+  width: 100%;
+
+}
+
+.two-col {
+  width: 46%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.two-col img {
+  width: 100%;
+}
+
 @media (min-width: 770px) {
   .left {
     float: left;
@@ -152,8 +198,6 @@ h5 {
     float: right;
     height: 100%;
     width: 45%;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 }
 @media (min-width: 960px) {
