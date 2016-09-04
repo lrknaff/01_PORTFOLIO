@@ -1,41 +1,23 @@
+/*sitewide classes*/
 body {
   font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
-.left {
-  display: inline-block;
-  background: url('IMGS/headshot1.jpg') no-repeat;
-  background-size: cover;
-  position: absolute;
-  background-position: center;
-  width: 50%;
-  height: 100vh;
-  /*min-height: 490px;*/
-  text-align: center;
-  color: #fff;
-}
-.main-info {
-  position: relative;
-  top: 62%;
-}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   margin: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.22);
 }
+
 h3 {
   margin: 0 0 15px;
   font-weight: 300;
   padding: 0 5px;
 }
-.right {
-  display: inline-block;
-  padding: 0 20px 20px;
-  color: #444;
-}
+
 h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -44,17 +26,66 @@ h4 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
 p {
   font-weight: 400;
   font-size: 15px;
   margin: 0 0 20px;
   line-height: 1.3em;
 }
-footer {
-  /*border: 2px solid blue;*/
-  height: 25px;
-  margin-top: 15px;
+
+/*left split classes*/
+.left {
+  display: inline-block;
+  background: url('../IMGS/headshot9.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
 }
+
+.main-info {
+  position: relative;
+  top: 62%;
+}
+
+.fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 0.6s;
+  animation-delay: -6s; 
+}
+
+.contact-me-btn {
+  background-color: #cdc8b5;
+  border-radius: 40px;
+  box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  height: 25px;
+  padding: 20px 10px 9px 10px;
+  width: 160px;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.contact-me-btn:hover {
+  padding: 20px 15px 9px 15px;
+}
+
 .social-icon {
   width: 20px;
   height: 20px;
@@ -65,30 +96,25 @@ footer {
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
 }
+
 .social-icon:hover {
   opacity: .5;
 }
-.button {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  padding: 15px 10px 9px 10px;
-  display: inline-block;
+
+footer {
   height: 25px;
-  width: 160px;
-  margin: 10px 0;
-  background-color: #03EBC8;
-  color: #fff;
-  text-decoration: none;
-  box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  margin-top: 15px;
 }
-.button:hover {
-  transform: scale(1.05);
-  /*background-color: #fff;
-  color: #03EBC8;*/
+
+
+/*right side*/
+.right {
+  display: inline-block;
+  padding: 0 20px 20px;
+  color: #444;
 }
+
+
 nav {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -103,9 +129,11 @@ nav {
   height: 50px;
   text-align: right;
 }
+
 nav ul {
   margin: 17px 50px 0 0;
 }
+
 li {
   color: #444;
   display: inline-block;
@@ -114,9 +142,11 @@ li {
   -moz-transition: color .5s ease-in-out;
   -webkit-transition: color .5s ease-in-out;
 }
+
 li:hover {
   color: #03EBC8;
 }
+
 ul.skills {
   list-style-type: disc;
   list-style-position: inside;
@@ -124,37 +154,40 @@ ul.skills {
   margin-left: 20px;
   line-height: 1.2em;
 }
+
 .skills li span {
   color:#969696;
 }
+
 .skills li {
   font-weight: 300;
   font-size: 13px;
   color: #03EBC8;
   padding: 5px 0;
 }
+
 #about-me {
   margin-top: 150px;
 }
+
 #about-me p {
   margin: 0 0 5px;
 }
+
 .work-experience {
   height: 50px;
   margin-bottom: 20px;
   margin-right: 20px;
 }
+
 .work-description {
   float: left;
 }
+
 .work-year {
   float: right;
 }
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
+
 .button-resume {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
