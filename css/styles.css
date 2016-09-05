@@ -8,17 +8,18 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 40px;
-  margin: 10px;
+  font-size: 2.7em;
+  line-height: 1.6;
   letter-spacing: 1px;
+  margin-bottom: 6px;
   text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.22);
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 300;
-  margin: 0 0 15px;
-  padding: 0 5px;
+  margin-bottom: 0 0 15px;
+  line-height: 1.2;
 }
 
 h4 {
@@ -44,6 +45,65 @@ p {
   line-height: 1.3em;
 }
 
+.button {
+  background-color: #cdc8b5;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  display: block;
+  font-family: 'brandon-grotesque', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  margin: 1.8em 0;
+  padding: 0.9em 1.8em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+/*wapasha button clases and animations*/
+.wapasha-button {
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.wapasha-button:hover {
+  background: none;
+  cursor: pointer;
+}
+
+.wapasha-button:hover::before {
+  background: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.wapasha-button::before {
+  content: '';
+  opacity: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  z-index: -1;
+  border-radius: inherit;
+  transform: scale3d(0.6, 0.6, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 10);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.wapasha-button:hover::before {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+
 /*left split classes*/
 .left {
   display: inline-block;
@@ -59,7 +119,7 @@ p {
 
 .main-info {
   position: relative;
-  top: 62%;
+  top: 65%;
 }
 
 /*fade in main-info*/
@@ -93,53 +153,9 @@ p {
   }
 }
 
-/*contact btn clases and animations*/
-.contact-me-btn {
-  background-color: #cdc8b5;
-  border-radius: 40px;
-  box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  display: inline-block;
-  font-family: 'brandon-grotesque', sans-serif;
-  font-weight: 400;
-  font-size: 0.9em;
-  letter-spacing: 3px;
-  height: 25px;
-  padding: 24px 10px 9px 10px;
-  width: 160px;
-  margin: 10px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-
-.contact-me-btn:hover {
-  background: none;
-  cursor: pointer;
-}
-
-.contact-me-btn::before {
-  content: '';
-  opacity: 0;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid white;
-  z-index: -1;
-  border-radius: inherit;
-  transform: scale3d(0.6, 0.6, 1);
-  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 10);
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.contact-me-btn:hover::before {
-  transform: scale3d(1, 1, 1);
-  opacity: 1;
+/*contact me button*/
+.contact-me-button {
+  margin: 2em auto;
 }
 
 /* social icons in footer*/
@@ -288,6 +304,7 @@ li:hover {
 
 #about-me {
   margin-top: 100px;
+  width: 100%;
 }
 
 #about-me p {
@@ -329,17 +346,23 @@ ul.skills {
   float: right;
 }
 
-.button-resume {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #03EBC8;
-  margin-top: 50px;
-  display: block;
+/*resume button*/
+.button.resume-button {
+  margin: 3em 0;
 }
-.arrow {
-  padding-left: 5px;
-  height: 15px;
+
+.button.resume-button:hover {
+  background: none;
+  color: #cdc8b5;
+}
+
+.button.resume-button::before {
+  color: #cdc8b5;
+  border: 2px solid #cdc8b5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*projects styling*/
