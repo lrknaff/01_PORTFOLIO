@@ -42,11 +42,11 @@ p {
   font-size: 15px;
   letter-spacing: .2px;
   margin: 0 0 20px;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 
 .button {
-  background-color: #cdc8b5;
+  background-color: #32DBB7;
   border: none;
   border-radius: 40px;
   color: #fff;
@@ -195,8 +195,8 @@ footer {
   width: 30px;
   height: 25px;
   position: fixed;
-  margin-top: 25px;
-  right: 25px;
+  margin-top: 40px;
+  right: 40px;
   background: white;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -306,12 +306,17 @@ li:hover {
 }
 
 #about-me {
-  margin-top: 100px;
-  width: 100%;
+  margin-top: 140px;
+  width: 95%;
 }
 
 #about-me p {
   margin: 0 0 5px;
+}
+
+#about-me p span {
+  display: block;
+  margin-bottom: 9px;
 }
 
 /*skills ul*/
@@ -326,7 +331,7 @@ ul.skills {
 .skills li {
   font-weight: 300;
   font-size: 13px;
-  color: #cdc8b5;
+  color: #32DBB7;
   padding: 5px 0;
 }
 
@@ -356,12 +361,12 @@ ul.skills {
 
 .button.resume-button:hover {
   background: none;
-  color: #cdc8b5;
+  color: #32DBB7;
 }
 
 .button.resume-button::before {
-  color: #cdc8b5;
-  border: 2px solid #cdc8b5;
+  color: #32DBB7;
+  border: 2px solid #32DBB7;
   top: 0;
   left: 0;
   width: 100%;
