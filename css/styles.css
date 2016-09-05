@@ -191,7 +191,7 @@ footer {
 }
 
 /*hamburger nav*/
-#nav-icon3 {
+#hamburger-nav {
   width: 30px;
   height: 25px;
   position: fixed;
@@ -209,7 +209,7 @@ footer {
   cursor: pointer;
 }
 
-#nav-icon3 span {
+#hamburger-nav span {
 display: block;
 position: absolute;
 height: 4px;
@@ -228,76 +228,68 @@ transform: rotate(0deg);
 transition: .25s ease-in-out;
 }
 
-#nav-icon3 span:nth-child(1) {
+#hamburger-nav span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+#hamburger-nav span:nth-child(2),#hamburger-nav span:nth-child(3) {
   top: 8px;
 }
 
-#nav-icon3 span:nth-child(4) {
+#hamburger-nav span:nth-child(4) {
   top: 16px;
 }
 
-#nav-icon3.open span:nth-child(1) {
+#hamburger-nav.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon3.open span:nth-child(2) {
+#hamburger-nav.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(3) {
+#hamburger-nav.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
+#hamburger-nav.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-/*regular nav*/
-/*nav {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  text-transform: uppercase;
-  display: block;
-  position: fixed;
-  background: #fff;
-  border-bottom: 1px solid #ebebeb;
-  margin-left: -23px;
-  width: 50%;
-  height: 50px;
-  text-align: right;
+/*full inner nav*/
+#nav-inner {
+  background: white;
+  height: 100%;
+  margin: 0 auto;
 }
 
-nav ul {
-  margin: 17px 50px 0 0;
+#full-screen-nav {
+  text-align: center;
+  margin-top: 50%;
 }
 
-li {
-  color: #444;
-  display: inline-block;
-  padding-left: 20px;
-  transition: color .5s ease-in-out;
-  -moz-transition: color .5s ease-in-out;
-  -webkit-transition: color .5s ease-in-out;
+
+#full-screen-nav a {
+  color: #484848;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2em;
+  text-decoration: none;
+  color: #484848;
+  line-height: 2.5em;
 }
 
-li:hover {
-  color: #03EBC8;
-}*/
 
 /*sections*/
 /*About me section*/
