@@ -19,9 +19,9 @@ function showHideNav () {
 function showAboutPage() {
   $('#nav-inner').hide();
   $('#about-me').show();
-  $('.experience').hide();
-  $('.education').hide();
-  $('.resume-button').hide();
+  $('.experience').show();
+  $('.education').show();
+  $('.resume-button').show();
 }
 
 function toggleHamburgerNav() {
