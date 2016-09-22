@@ -28,6 +28,7 @@ function toggleHamburgerNav() {
   $('#hamburger-nav').toggleClass('open');
 }
 
+
 $(document).ready(function() {
   $('#hamburger-nav').click(function() {
 		toggleHamburgerNav ();
@@ -38,3 +39,12 @@ $(document).ready(function() {
     toggleHamburgerNav ();
   });
 });
+
+
+// $(window).scroll(function() {
+//   if ($('.education')).is(':in-viewport')) {
+//     $('.education').fadein();
+//   } else {
+//     $('.education').hide();
+//   }
+// });
